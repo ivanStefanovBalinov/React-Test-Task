@@ -26,7 +26,6 @@ body {
   @media only screen and (max-width: 600px){
     #root{
         max-width: 600px;
-        width: 100%;
-        margin-left: 10px;
+        width: 100%; 
     }
   }
