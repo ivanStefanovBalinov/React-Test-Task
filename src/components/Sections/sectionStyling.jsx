@@ -22,12 +22,13 @@ export const StyledSectionContainer = styled.div`
     flex-direction: row;
     align-content: normal;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start
     gap: 20px;
     border-radius: 10px;
     padding: 10px;
     height: 140px;
     cursor: pointer;
+    box-sizing: border-box;
     &:hover,
     &:focus {
         border: 2px solid #4092FD;
