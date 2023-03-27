@@ -6,7 +6,7 @@ import SectionParagraph from "../Typography/SectionParagraph";
 export const SectionContainer = ({img, title, paragraph,  width, opasity}) => {
     
     return <StyledSectionContainer 
-        style={{width:`${width}`, 
+        style={{maxWidth:`${width}`, 
         backgroundColor:`rgba(241, 241, 241, ${opasity})`}} 
         className="section-text-wrapper" >
         <div className="section-img-wrapper"><img className="section-img" src={img} alt={title}/></div>
