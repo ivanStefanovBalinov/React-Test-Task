@@ -6,7 +6,7 @@ import {sectionData} from "./data.js";
 
 export const MainWrapper  = ({img}) => {
     const data = sectionData
-    console.log(data)
+
     
     return <StyledMainWrapper className='main-wrapper'>
         <div>
