@@ -52,10 +52,8 @@ export const StyledSectionInnerHeading =styled.h4`
     font-size: 1.25rem;
     line-height: 1.875rem;
     font-weight: 300;
-    margin: 0px;
-    color: black;
+    margin: 0px; 
     font-weight: bold;
-
     @media (max-width: 650px){
         font-size: 1rem;
     }
