@@ -1,5 +1,5 @@
-import {StyledMainWrapper} from './sectionStyling'
-import { SectionContainer } from './SectionContainer'
+import {StyledMainWrapper} from './elements';
+import { SectionContainer } from './SectionContainer';
 import {sectionData} from "./data.js";
 import { useState } from 'react';
 
