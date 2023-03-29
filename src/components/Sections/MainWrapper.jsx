@@ -1,4 +1,4 @@
-import {StyledMainWrapper} from './sectionStyling'
+import {StyledMainWrapper} from './elements'
 import { SectionContainer } from './SectionContainer'
 import {sectionData} from "./data.js";
 import { useWindowResize } from './useWindowResize';
