@@ -1,4 +1,4 @@
-import { StyledSectionContainer } from "./sectionStyling";
+import { StyledSectionContainer } from "./elements";
 import { SectionInnerHeading } from "../Typography/SectionInnerHeading";
 import SectionParagraph from "../Typography/SectionParagraph";
 
