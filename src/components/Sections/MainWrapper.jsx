@@ -1,6 +1,7 @@
-import {StyledMainWrapper} from './elements';
-import { SectionContainer } from './SectionContainer';
+import {StyledMainWrapper} from './sectionStyling'
+import { SectionContainer } from './SectionContainer'
 import {sectionData} from "./data.js";
+import { useWindowResize } from './useWindowResize';
 import { useState } from 'react';
 
 
@@ -8,6 +9,7 @@ import { useState } from 'react';
 
 export const MainWrapper  = ({img}) => {
     const data = sectionData;
+    const [height2, windowWidth] =useWindowResize()
     
     const [appState, setAppState] = useState({
         active: null,
@@ -34,6 +36,9 @@ export const MainWrapper  = ({img}) => {
             return ''
         } 
     } 
+
+    
+    
     
     return <StyledMainWrapper className={'main-wrapper'}>
         <div>
@@ -41,15 +46,15 @@ export const MainWrapper  = ({img}) => {
         </div>
         <div className='section-wrapper'>
             {appState.objects.map((obj, index) => {
-                const {img, title, paragraph, width, opasity,id} = obj
+                const {img, title, paragraph, width, opacity,id} = obj
                 return <SectionContainer
                     
-                    id = {id} 
+                    key={id} 
                     img={img} 
                     title={title} 
                     paragraph={paragraph}
-                    width={width}
-                    opasity={opasity}
+                    width={windowWidth < 600 ? '320px': width}
+                    opacity={opacity}
                     onClick={() => clickHandler(index)}
                     classNameMainDiv = {activeStyleBorder(index)}
                     classNameTitle = {activeStyleInnerHeader(index)}
