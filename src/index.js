@@ -1,8 +1,8 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
 import './index.css'
-import HeaderSection from "./components/Typography/typography";
-import Section from "./components/Sections/section";
+import HeaderSection from "./components/Typography/index";
+import Section from "./components/Sections/index";
 
 
 const TestComponent = () => {
