@@ -5,7 +5,7 @@ import HeaderSection from "./components/Typography/index";
 import Section from "./components/Sections/index";
 
 
-const TestComponent = () => {
+const ComponentStructure = () => {
     
     return <div>
         <HeaderSection/>
@@ -16,4 +16,4 @@ const TestComponent = () => {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<TestComponent/>)
+root.render(<ComponentStructure/>)
