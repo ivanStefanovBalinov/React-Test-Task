@@ -43,5 +43,6 @@ export const StyledSectionContainer = styled.div`
         gap: 10px;
         padding: 0px;
         
+        
     }
 `;
